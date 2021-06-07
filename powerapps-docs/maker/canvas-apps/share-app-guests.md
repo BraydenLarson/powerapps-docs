@@ -31,6 +31,9 @@ Canvas apps can be shared with guest users of an Azure Active Directory (Azure A
   - The tenant hosting the app being shared
   - The home tenant of the guest user
 
+  > [!NOTE]
+  > While a license is required on either the Guest Users Home tenant or the tenant that is hosting the app it must be noted that as a restriction licenses that point to Commercial will not give access to PowerApps on Government tenants and vice versa. This means that if you setup a guest user who has a commercial license on a Government tenant they will still get the license prompt and would need a license on the government tenant assigned to their account to access the PowerApp.
+
 ## Steps to grant guest access
 
 1. In Azure AD, select **New guest user**. More information: [Quickstart: Add a new guest user in Azure AD](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)
